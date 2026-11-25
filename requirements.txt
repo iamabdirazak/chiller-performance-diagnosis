@@ -1,0 +1,9 @@
+numpy
+pandas
+pyarrow
+xlrd
+CoolProp
+matplotlib
+pytest
+onnx
+onnxruntime

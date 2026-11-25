@@ -1,0 +1,248 @@
+{
+  "healthy_tests": 14,
+  "healthy_hours": 187.1,
+  "healthy_tests_with_an_advisory": 0,
+  "fault_tests": 28,
+  "detected": 25,
+  "cause_correct_when_detected": 24,
+  "tests": [
+    {
+      "test": "fwc10",
+      "fault": "condenser flow",
+      "severity": 10,
+      "detected": true,
+      "cause": "condenser flow",
+      "correct": true
+    },
+    {
+      "test": "fwc20",
+      "fault": "condenser flow",
+      "severity": 20,
+      "detected": true,
+      "cause": "condenser flow",
+      "correct": true
+    },
+    {
+      "test": "fwc30",
+      "fault": "condenser flow",
+      "severity": 30,
+      "detected": true,
+      "cause": "condenser flow",
+      "correct": true
+    },
+    {
+      "test": "fwc40",
+      "fault": "condenser flow",
+      "severity": 40,
+      "detected": true,
+      "cause": "condenser flow",
+      "correct": true
+    },
+    {
+      "test": "fwe10",
+      "fault": "evaporator flow",
+      "severity": 10,
+      "detected": true,
+      "cause": "evaporator flow",
+      "correct": true
+    },
+    {
+      "test": "fwe20",
+      "fault": "evaporator flow",
+      "severity": 20,
+      "detected": true,
+      "cause": "evaporator flow",
+      "correct": true
+    },
+    {
+      "test": "fwe30",
+      "fault": "evaporator flow",
+      "severity": 30,
+      "detected": true,
+      "cause": "evaporator flow",
+      "correct": true
+    },
+    {
+      "test": "fwe40",
+      "fault": "evaporator flow",
+      "severity": 40,
+      "detected": true,
+      "cause": "evaporator flow",
+      "correct": true
+    },
+    {
+      "test": "cf6",
+      "fault": "fouling",
+      "severity": 6,
+      "detected": false,
+      "cause": NaN,
+      "correct": false
+    },
+    {
+      "test": "cf12",
+      "fault": "fouling",
+      "severity": 12,
+      "detected": false,
+      "cause": NaN,
+      "correct": false
+    },
+    {
+      "test": "cf20",
+      "fault": "fouling",
+      "severity": 20,
+      "detected": true,
+      "cause": "fouling",
+      "correct": true
+    },
+    {
+      "test": "cf30",
+      "fault": "fouling",
+      "severity": 30,
+      "detected": true,
+      "cause": "fouling",
+      "correct": true
+    },
+    {
+      "test": "cf45",
+      "fault": "fouling",
+      "severity": 45,
+      "detected": true,
+      "cause": "fouling",
+      "correct": true
+    },
+    {
+      "test": "rl10",
+      "fault": "leak",
+      "severity": 10,
+      "detected": true,
+      "cause": "overcharge",
+      "correct": false
+    },
+    {
+      "test": "rl20",
+      "fault": "leak",
+      "severity": 20,
+      "detected": true,
+      "cause": "leak",
+      "correct": true
+    },
+    {
+      "test": "rl30",
+      "fault": "leak",
+      "severity": 30,
+      "detected": true,
+      "cause": "leak",
+      "correct": true
+    },
+    {
+      "test": "rl40",
+      "fault": "leak",
+      "severity": 40,
+      "detected": true,
+      "cause": "leak",
+      "correct": true
+    },
+    {
+      "test": "nc1",
+      "fault": "non-condensables",
+      "severity": 1,
+      "detected": true,
+      "cause": "non-condensables",
+      "correct": true
+    },
+    {
+      "test": "nc2",
+      "fault": "non-condensables",
+      "severity": 2,
+      "detected": true,
+      "cause": "non-condensables",
+      "correct": true
+    },
+    {
+      "test": "nc3",
+      "fault": "non-condensables",
+      "severity": 3,
+      "detected": true,
+      "cause": "non-condensables",
+      "correct": true
+    },
+    {
+      "test": "nc5",
+      "fault": "non-condensables",
+      "severity": 5,
+      "detected": true,
+      "cause": "non-condensables",
+      "correct": true
+    },
+    {
+      "test": "eo14",
+      "fault": "oil",
+      "severity": 14,
+      "detected": false,
+      "cause": NaN,
+      "correct": false
+    },
+    {
+      "test": "eo32",
+      "fault": "oil",
+      "severity": 32,
+      "detected": true,
+      "cause": "oil",
+      "correct": true
+    },
+    {
+      "test": "eo50",
+      "fault": "oil",
+      "severity": 50,
+      "detected": true,
+      "cause": "oil",
+      "correct": true
+    },
+    {
+      "test": "ro10",
+      "fault": "overcharge",
+      "severity": 10,
+      "detected": true,
+      "cause": "overcharge",
+      "correct": true
+    },
+    {
+      "test": "ro20",
+      "fault": "overcharge",
+      "severity": 20,
+      "detected": true,
+      "cause": "overcharge",
+      "correct": true
+    },
+    {
+      "test": "ro30",
+      "fault": "overcharge",
+      "severity": 30,
+      "detected": true,
+      "cause": "overcharge",
+      "correct": true
+    },
+    {
+      "test": "ro40",
+      "fault": "overcharge",
+      "severity": 40,
+      "detected": true,
+      "cause": "overcharge",
+      "correct": true
+    }
+  ],
+  "edge": {
+    "size_kb": 6.0,
+    "latency_ms_median": 0.022,
+    "latency_ms_p99": 0.024,
+    "budget_ms": 50.0,
+    "max_residual_difference": {
+      "liquid_approach": 0.0167,
+      "subcooling": 0.0,
+      "oil_temperature": 0.0,
+      "condenser_flow": 0.0,
+      "evaporator_flow": 0.0
+    },
+    "max_second_law_difference": 0.00048
+  }
+}

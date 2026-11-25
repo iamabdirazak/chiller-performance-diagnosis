@@ -5,7 +5,7 @@
   <img src="docs/model.png" alt="Chiller Performance Model">
 </picture>
 
-Chiller Performance Diagnosis watches a water-cooled centrifugal chiller through the instruments a plant room already has, and says which part of the refrigeration cycle has drifted from health and why. It reads the cycle with the first and second laws and R-134a's saturation properties, compares each health parameter with a learned model of the healthy chiller at the same load and water temperatures, and names one of seven faults: condenser fouling, non-condensable gas, refrigerant overcharge or leak, excess oil, and low condenser or chilled-water flow. On the laboratory tests of ASHRAE research project 1043, it raised no advisory across 187 hours of healthy operation, detected 25 of 28 fault tests and named the cause correctly in 24 of them. It runs in 0.04 ms per operating point on one CPU thread.
+Chiller Performance Diagnosis watches a water-cooled centrifugal chiller through the instruments a plant room already has, and says which part of the refrigeration cycle has drifted from health and why. It reads the cycle with the first and second laws and R-134a's saturation properties, compares each health parameter with a learned model of the healthy chiller at the same load and water temperatures, and names one of seven faults: condenser fouling, non-condensable gas, refrigerant overcharge or leak, excess oil, and low condenser or chilled-water flow. On the laboratory tests of ASHRAE research project 1043, it raised no advisory across 187 hours of healthy operation, detected 25 of 28 fault tests and named the cause correctly in 24 of them. It runs in 0.02 ms per operating point on one CPU thread.
 
 ## The Chiller
 
@@ -102,7 +102,7 @@ The model is designed for a water-cooled chiller with the instruments a plant ro
 | Several faults move the same temperatures | Two approach temperatures and subcooling separate them by direction |
 | Readings are noisy between operating points | Only steady stretches are used, and health is the median of six |
 | Maintenance is planned by engineers | Health is reported in K and kg/s, and each advisory names a cause |
-| A plant controller has a modest CPU | One operating point takes 0.04 ms |
+| A plant controller has a modest CPU | One operating point takes 0.02 ms |
 
 Some situations call for a different design. A chiller with no flowmeters needs the flows inferred from a compressor map before the water-side duties are known. Faults that develop in minutes, such as a failing expansion valve, need dynamic models of the transients this model skips. A different refrigerant needs its own saturation curve, and a different chiller its own healthy baseline.
 
